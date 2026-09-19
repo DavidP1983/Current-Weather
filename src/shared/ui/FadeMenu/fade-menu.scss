@@ -1,0 +1,20 @@
+.menu {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #3333d6;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.icon {
+  gap: 10px;
+}
+
+.fade {
+  display: none;
+}

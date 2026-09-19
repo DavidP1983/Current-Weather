@@ -8,9 +8,5 @@ as React, Hooks, Axios, Custom Hooks, TypeScript, Ant Design, MUI, ts-pattern
 [![image](https://github.com/user-attachments/assets/ba47f280-8148-4de8-a37b-349742e4070e)](https://current-weather-iota.vercel.app/)
 
 > SPA
--------
 
-
-
-
-
+---

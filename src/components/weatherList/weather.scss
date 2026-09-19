@@ -1,0 +1,14 @@
+.wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+
+  .no-data {
+    color: #8c3131;
+    font-size: 18px;
+  }
+}
