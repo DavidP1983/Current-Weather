@@ -9,6 +9,7 @@ type InputWithIconProps = InputProps & {
   onIconClick: React.MouseEventHandler<HTMLButtonElement>;
   className: string;
   city: string;
+  isValid: boolean;
   status: Status;
 };
 
@@ -17,6 +18,7 @@ export const InputWithIcon = ({
   onIconClick,
   className,
   city,
+  isValid,
   status,
   ...inputProps
 }: InputWithIconProps) => {
@@ -29,11 +31,13 @@ export const InputWithIcon = ({
         display: 'flex',
         alignItems: 'center',
         width: 400,
+        outline: isValid ? '' : '1px solid',
+        outlineColor: 'red',
       }}>
       <Input {...inputProps} />
 
       <IconButton
-        disabled={city.length === 0 || status === 'loading'}
+        disabled={city.length === 0 || status === 'loading' || !isValid}
         className={className}
         type="button"
         sx={{ p: '10px' }}

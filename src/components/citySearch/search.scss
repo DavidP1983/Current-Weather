@@ -1,5 +1,6 @@
 .search {
   margin-top: 20px;
+  min-height: 75px;
 
   & .form {
     & .btn {
@@ -14,5 +15,15 @@
         cursor: no-drop;
       }
     }
+  }
+
+  & .message {
+    display: block;
+    margin-top: 5px;
+    color: #ae1111;
+  }
+
+  & .hide {
+    display: none;
   }
 }

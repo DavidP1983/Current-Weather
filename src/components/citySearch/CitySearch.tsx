@@ -12,7 +12,10 @@ interface CitySearchProps {
 }
 
 export const CitySearch = ({ variant, getCity, status }: CitySearchProps) => {
-  const { changeHandler, clickHandler, value } = useCitySearch(getCity);
+  const { changeHandler, clickHandler, value, isValidInputValue } =
+    useCitySearch(getCity);
+
+  const errorMessage = !isValidInputValue ? 'message' : 'hide';
 
   return (
     <>
@@ -23,12 +26,18 @@ export const CitySearch = ({ variant, getCity, status }: CitySearchProps) => {
             status={status}
             className="btn"
             value={value}
+            isValid={isValidInputValue}
             onChange={changeHandler}
             onIconClick={clickHandler}
             autoFocus={variant}
             icon={<SearchIcon />}
             placeholder="Search Your City"
           />
+          <p
+            className={errorMessage}
+            role="alert">
+            * City name can only contain letters and hyphens between words.
+          </p>
         </div>
       )}
     </>

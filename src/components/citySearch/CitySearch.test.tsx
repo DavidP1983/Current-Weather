@@ -1,5 +1,6 @@
 import '@testing-library/jest-dom';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { CitySearch } from './CitySearch';
 
 const getCityMock = jest.fn();
@@ -26,5 +27,20 @@ describe('Test CitySearch', () => {
 
     const inputWithIcon = document.querySelector('.btn');
     expect(inputWithIcon).not.toBeInTheDocument();
+  });
+
+  it('should contain class message if error in input', async () => {
+    render(
+      <CitySearch
+        variant={true}
+        getCity={getCityMock}
+        status="idle"
+      />
+    );
+    const input = screen.getByLabelText('Search Your City');
+    await userEvent.type(input, 'mon2');
+
+    const elem = screen.getByRole('alert');
+    expect(elem).toHaveClass('message');
   });
 });

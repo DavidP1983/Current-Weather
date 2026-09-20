@@ -1,4 +1,3 @@
-/* eslint-disable react-you-might-not-need-an-effect/no-event-handler */
 import InputBase from '@mui/material/InputBase';
 import { useEffect, useRef } from 'react';
 import { InputProps } from './type.input';

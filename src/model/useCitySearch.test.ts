@@ -26,6 +26,7 @@ describe('Test useCitySearch', () => {
   it('should not call getCity when value is empty', () => {
     const getCityMock = jest.fn();
     const { result } = renderHook(() => useCitySearch(getCityMock));
+    result.current.isValidInputValue = false;
 
     act(() => {
       result.current.clickHandler({
