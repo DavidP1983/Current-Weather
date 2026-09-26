@@ -1,0 +1,29 @@
+.search {
+  margin-top: 20px;
+  min-height: 75px;
+
+  & .form {
+    & .btn {
+      background: #146ae5;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+
+      &:disabled {
+        background: gray;
+        pointer-events: all;
+        cursor: no-drop;
+      }
+    }
+  }
+
+  & .message {
+    visibility: visible;
+    margin-top: 5px;
+    color: #ae1111;
+  }
+
+  & .hide {
+    visibility: hidden;
+  }
+}

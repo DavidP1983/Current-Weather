@@ -1,4 +1,4 @@
 # .husky/pre-commit
 
-npm test -- --watchAll=false
+cd frontend && npm test -- --watchAll=false
 npx lint-staged --concurrent=false --continue-on-error

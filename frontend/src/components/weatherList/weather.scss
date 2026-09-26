@@ -1,0 +1,16 @@
+.wrapper {
+  width: 900px;
+  margin: 10px auto 0;
+  position: relative;
+
+  .no-data {
+    color: #8c3131;
+    font-size: 18px;
+  }
+
+  .modal {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+  }
+}
