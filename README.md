@@ -1,22 +1,28 @@
 ## My World Project
 
 Technologies
-Frontend
-React
-React Hooks
-Custom Hooks
-TypeScript
-Ant Design
-Material UI (MUI)
-ts-pattern
-Testing
-Jest
-React Testing Library
-Backend & Telegram Bot
-Node.js
-Express.js
-REST API
-Telegram Bot API
+
+### Frontend
+
+- React
+- React Hooks
+- Custom Hooks
+- TypeScript
+- Axios
+- Ant Design
+- Material UI (MUI)
+- ts-pattern
+
+### Testing
+
+- Jest
+- React Testing Library
+  
+### Backend & Telegram Bot
+ - Node.js
+ - Express.js
+ - REST API
+ - Telegram Bot API
 
 The project includes a React frontend, a backend API, and a Telegram bot that allows users to get current weather information and receive weather updates.
 
