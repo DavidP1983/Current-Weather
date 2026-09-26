@@ -1,6 +1,6 @@
-## My World Project
+<h2 align="center">Weather App</h2>
 
-Technologies
+<h3 align="center">Technologies</h3>
 
 ### Frontend
 
