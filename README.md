@@ -8,7 +8,6 @@
 - React Hooks
 - Custom Hooks
 - TypeScript
-- Axios
 - Ant Design
 - Material UI (MUI)
 - ts-pattern
