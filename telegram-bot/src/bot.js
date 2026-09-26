@@ -7,6 +7,7 @@ import { formatWeather } from './formatWeather.js';
 import { getNextRunAt } from './getNextRunAt.js';
 import { handleBotError } from './handleBotError.js';
 import { Strategy } from './keyboards.js';
+import { startServer } from './server.js';
 import { validateCity } from './validateCity.js';
 import { startWeatherScheduler } from './weatherScheduler.js';
 
@@ -102,5 +103,8 @@ bot.on('callback_query', async (ctx) => {
         console.log(subscriptions);
     }
 });
+
+// To deploy bot to Render
+startServer();
 
 await run(bot);
