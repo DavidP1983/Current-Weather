@@ -1,6 +1,9 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 export const getWeather = async (city) => {
     const response = await fetch(
-        `http://localhost:5001/api/weather?city=${encodeURIComponent(city)}`,
+        `${process.env.API_URL}/api/weather?city=${encodeURIComponent(city)}`,
     );
 
     if (!response.ok) {
